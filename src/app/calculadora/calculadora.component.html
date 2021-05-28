@@ -1,6 +1,6 @@
 <div class="container">
     <div id="header">
-      <h3>Javascript Calculator</h3></div>
+      <h3>Rest Calculator</h3></div>
     <div id="calc" class="text-center">
       <div id="display">
       <div id="result"><p>{{salida}}</p></div>
@@ -26,14 +26,16 @@
           <button class="btn btn-info" (click)="anadir2()" value="2">2</button>
           <button class="btn btn-info" (click)="anadir3()" value="3">3</button>
           <button class="btn btn-warning" (click)="anadirMas()" value="+">+</button>
-          <button class="btn btn-success btn-result" (click)="resultado()" value="=">=</button>
+          <button class="btn btn-warning" (click)="anadirMenos()" value="-">-</button>
+         
           
         </div>
-        <div class="row last-row">
-          <button class="btn btn-info btn-zero" (click)="anadir7()" value="0">0</button>
-           <!-- <button class="invisible" value=""></button> -->
-          <button class="btn btn-warning" value=".">.</button>
-          <button class="btn btn-warning" (click)="anadirMenos()" value="-">-</button>
+        <div class="row">
+          <button class="btn btn-zero btn-info" (click)="anadir7()" value="0">0</button>
+           <button class="btn btn-warning"  (click)="anadirResto()" value="%">%</button>
+          <button class="btn btn-warning"  (click)="anadirElevado()" value="^">^</button>
+         
+          <button class="btn btn-success" (click)="resultado()" value="=">=</button>
           <!-- <button class="invisible" value=""></button> -->
           
         </div>
